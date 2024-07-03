@@ -3,7 +3,7 @@
 
 # Gettin Started Wit Turtlesim
 Start the **roscore**:
-> $ roscore
+``` $ roscore ```
 
 To install and start the turtlesim:
 > $ sudo apt install ros-noetic-turtlesim
