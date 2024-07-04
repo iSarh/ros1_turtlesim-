@@ -16,7 +16,9 @@ Run turtlesim:
 
 ``` $ rosrun turtlesim turtlesim_node ```
 
+
 ![Screenshot 2024-07-04 004723](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/4261c90b-3a01-48a7-a0a9-39925fb9e1a2)
+
 
 ## Control Turtle Movement
 
@@ -29,7 +31,12 @@ To control the turtle's position from your keyboard:
 
 ```$ rosrun turtlesim turtle_teleop_key```
 
+
 ![Screenshot 2024-07-04 010223](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/85fea155-d7a5-4dc7-892e-9ad549621be7)
+
+
+The >turtlesim_node< and the >turtle_teleop_key< node are communicating with each other over a ROS Topic. turtle_teleop_key is publishing the key strokes on a topic, while turtlesim subscribes to the same topic to receive the key strokes. Let's use rqt_graph which shows the nodes and topics currently running.
+
 
 
 
