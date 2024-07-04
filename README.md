@@ -4,7 +4,9 @@
 # Gettin Started Wit Turtlesim
 Start ROS in the terminal using the command:
 
-``` $ roscore ```
+```bash
+$ roscore
+ ```
 
 **_Open New Terminal_**
 
