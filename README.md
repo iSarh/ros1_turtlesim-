@@ -29,7 +29,7 @@ $ rosrun turtlesim turtlesim_node
 ## Control Turtle Movement
 
 > [!IMPORTANT]  
-> From now on, open a new terminal to execute the command.
+> From now on, open a new terminal to execute each command.
 
 There is a built-in feature that takes the user's keyboard input and converts it into a ROS message that controls the turtle's position.
 
@@ -49,9 +49,11 @@ This data is published on the ```/turtle1/cmd_vel```
 ```bash
 rostopic echo /turtle1/cmd_vel
 ```
-You probably won't see anything happen because no data is being published on the topic. Let's make ```turtle_teleop_key``` publish data by pressing the arrow keys. 
+You probably won't see anything happen because no data is being published on the topic. 
+Let's make ```turtle_teleop_key``` publish data by pressing the arrow keys. 
 
-**Remember if the turtle isn't moving you need to select the ```turtle_teleop_key``` terminal again.**
+> [!NOTE]  
+> **If the turtle isn't moving you need to select the ```turtle_teleop_key``` terminal again.**
 
 You should now see the following when you press the up key:
 
@@ -59,7 +61,9 @@ You should now see the following when you press the up key:
 ![Screenshot 2024-07-04 012241](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/c79678f2-8570-434a-ba9a-b205a96e6f42)
 
 
-The ```turtlesim_node``` and the ```turtle_teleop_key``` node are communicating with each other over a ROS Topic. ```turtle_teleop_key``` is **publishing** the keystrokes on a topic, while ```turtlesim``` **subscribes** to the same topic to receive the keystrokes. 
+The ```turtlesim_node``` and the ```turtle_teleop_key``` node are communicating with each other over a ROS Topic.
+
+```turtle_teleop_key``` is **publishing** the keystrokes on a topic, while ```turtlesim``` **subscribes** to the same topic to receive the keystrokes. 
 
 Let's see the nodes and topics currently running.
 
@@ -71,3 +75,13 @@ $ rosrun rqt_graph rqt_graph
 
 
 ![Screenshot 2024-07-04 012431](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/4dedfaf6-7caf-4da4-9624-26f7f021a916)
+
+**Last but not least, let's make the turtle draw a square on its own.**
+
+```bash
+$ rosrun turtlesim draw square
+```
+
+![Screenshot 2024-07-04 004317](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/ba66592b-d598-460f-80a5-cdf295cc1e63)
+
+
