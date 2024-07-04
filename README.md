@@ -18,7 +18,7 @@ Run turtlesim:
 
 ![Screenshot 2024-07-04 004723](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/4261c90b-3a01-48a7-a0a9-39925fb9e1a2)
 
-**Control Turtle Movement**
+## Control Turtle Movement
 
 > [!IMPORTANT]  
 > From now on, open a new terminal to execute the command.
