@@ -46,9 +46,11 @@ $ rosrun turtlesim turtle_teleop_key
 Let's look at the command velocity data published by the ```turtle_teleop_key node```.
 
 This data is published on the ```/turtle1/cmd_vel```
+
 ```bash
-rostopic echo /turtle1/cmd_vel
+$ rostopic echo /turtle1/cmd_vel
 ```
+
 You probably won't see anything happen because no data is being published on the topic. 
 Let's make ```turtle_teleop_key``` publish data by pressing the arrow keys. 
 
@@ -65,6 +67,7 @@ The ```turtlesim_node``` and the ```turtle_teleop_key``` node are communicating 
 
 ```turtle_teleop_key``` is **publishing** the keystrokes on a topic, while ```turtlesim``` **subscribes** to the same topic to receive the keystrokes. 
 
+
 Let's see the nodes and topics currently running.
 
 ```bash
@@ -79,7 +82,7 @@ $ rosrun rqt_graph rqt_graph
 **Last but not least, let's make the turtle draw a square on its own.**
 
 ```bash
-$ rosrun turtlesim draw square
+$ rosrun turtlesim draw_square
 ```
 
 ![Screenshot 2024-07-04 004317](https://github.com/iSarh/ros1_turtlesim-/assets/63901303/ba66592b-d598-460f-80a5-cdf295cc1e63)
