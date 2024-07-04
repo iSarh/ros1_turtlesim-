@@ -52,6 +52,7 @@ $ rostopic echo /turtle1/cmd_vel
 ```
 
 You probably won't see anything happen because no data is being published on the topic. 
+
 Let's make ```turtle_teleop_key``` publish data by pressing the arrow keys. 
 
 > [!NOTE]  
