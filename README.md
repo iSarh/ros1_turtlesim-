@@ -6,7 +6,7 @@ Start ROS in the terminal using the command:
 
 ``` $ roscore ```
 
-**  *Open New Terminal* **
+**_Open New Terminal_**
 
 Start the turtlesim node on a new terminal using the command:
 
